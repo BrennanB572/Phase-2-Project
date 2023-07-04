@@ -1,8 +1,12 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './Components/NavBar';
 
 const App = () => {
     return (
-        <h1>App</h1>
+        <div className="App">
+        <NavBar/>
+        </div>
     );
 }
 

@@ -1,0 +1,31 @@
+.bg-body-tertiary {
+    background: linear-gradient(1deg, rgba(196, 199, 203, 1) 0%, rgba(60, 100, 157, 0.93) 100%);
+}
+
+.nav-link:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+.nav-link {
+  color: #fff;
+}
+
+body {
+    background: linear-gradient(96deg, #242050 0%, #000000ED 100%);
+}
+.title {
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #060418, 0 0 40px #060418, 0 0 50px #060418, 0 0 60px #060418, 0 0 70px #060418;
+    }
+    
+    to {
+      color: rgb(45, 45, 74);
+      text-shadow: 0 0 20px #070814, 0 0 30px #335c7b, 0 0 40px #335c7b, 0 0 50px #335c7b, 0 0 60px #335c7b, 0 0 70px #335c7b, 0 0 80px #335c7b;
+    }
+  }
