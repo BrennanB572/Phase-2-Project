@@ -1,25 +1,39 @@
+import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 
-const NavBar = () => {
+function NavBar() {
   return (
-    <div>
     <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand className="title">Tourna</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <NavLink exact to="/home">Home</NavLink> 
-            <NavLink to="/tournaments">Tournaments</NavLink>
-            <NavLink to="/create">Create</NavLink>
+      <Container fluid>
+        <Navbar.Brand href="#">The Movie App</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >
+            <div className="nav-links">
+            <NavLink to="/home">Home</NavLink>
+            <NavLink to="/movies">Movies</NavLink>
+            </div>
           </Nav>
+          <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Button variant="outline-success">Search</Button>
+          </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    </div>
   );
 }
 

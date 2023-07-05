@@ -1,5 +1,4 @@
 import React from 'react';
-import TCards from './TCards';
 
 const Home = () => {
     return(
