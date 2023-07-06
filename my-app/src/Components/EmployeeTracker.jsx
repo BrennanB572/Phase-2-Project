@@ -1,7 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const EmployeeTracker = () => {
-    
+        const addEmployee = (newEmployee) => {
+        setData([...data, newEmployee])
+   }
+        const delEmployee = (employee) => {
+            setData()
+   }
 
     return (
         <div>

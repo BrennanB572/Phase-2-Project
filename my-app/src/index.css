@@ -32,13 +32,13 @@ background-color: rgb(58, 57, 68);
   position: relative;
   text-align: center;
   background-color: rgb(114, 111, 134);
-  border-radius: 10px;
 }
 
 .formbtn {
   padding: 2px;
   margin: 10px;
   width: 100px;
+  cursor: crosshair;
 }
 
 .et {
