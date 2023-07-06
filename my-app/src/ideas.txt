@@ -1,0 +1,11 @@
+Employee Portal Attendence App 
+1. Need to implement the Navbar and create custom styling. Maybe can utilize React-Bootstrap for the Navbar decoration but most likely will do custom.
+2. First things first though, need to create a db.json file and add fake AA names to ensure it works then dynamically implement it into my app.
+3. I will need to create a tab that has a dropdown where I can add a new employee then have a button on the end that has some type of click feature that will add the employee to the list of employees.
+4. The new employee list will be based off of a form that you fill out when uploading the new employee
+5. form will contain the following structure: 
+  1. Date (so you can keep track of the date of the roster creation)
+  2. Employee Name ( this should be obvious )
+  3. Function ( the role of which the employee is associated )
+6. Down the line i'd like to add a duplicate feature where you can duplicate the roster from the previous day to allow for less work when adding the employees in.
+7. I'd also like to implement more features catering to the manager on shift to make sure they have all of their labor management tools in once place to avoid headaches.
