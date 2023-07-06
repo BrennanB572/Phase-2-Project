@@ -10,7 +10,7 @@ const App = () => {
         <div className="App">
         <Navbar />
         <Routes>
-            <Route path="/home">
+            <Route path="/">
                 <Home />
             </Route>
             <Route path="/tracker">
