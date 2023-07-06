@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 
 function EmployeeTracker() {
+     
+
+
     return (
         <div>
             <h1>Employee Attendance Tracker</h1>

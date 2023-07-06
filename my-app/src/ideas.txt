@@ -9,3 +9,5 @@ Employee Portal Attendence App
   3. Function ( the role of which the employee is associated )
 6. Down the line i'd like to add a duplicate feature where you can duplicate the roster from the previous day to allow for less work when adding the employees in.
 7. I'd also like to implement more features catering to the manager on shift to make sure they have all of their labor management tools in once place to avoid headaches.
+8. next steps are to create the backend portion of the app then implement the add, delete and get functions. this will be inside of the employee tracker Component.
+9. quick idea for future state... id like to add functionality where managers can open a chat tab to talk amongst eachother to ensure that staffing meets needs of the building 
