@@ -1,25 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const EmployeeTracker = () => {
-        const addEmployee = (newEmployee) => {
-        setData([...data, newEmployee])
-   }
-        const delEmployee = (employee) => {
-            setData()
-   }
+    const [data, setData] = useState({});
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setData((prevData) => ({ ...prevData, [name]: value }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setData({})
+    }
 
     return (
         <div>
         <h1 className="et">Employee Attendance Tracker</h1>
         <div className="form">
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label className="control">Date:</label><br></br>
-                <input placeholder="00/00/000" type="text"></input><br></br>
+                <input 
+                placeholder="00/00/000" 
+                type="text"
+                value={data.date || ""}
+                onChange={handleChange}
+                /><br></br>
                 <label className="control">Name:</label><br></br>
-                <input placeholder="John Doe" type="text"></input><br></br>
+                <input 
+                placeholder="John Doe" 
+                type="text"
+                value={data.name || ""}
+                /><br></br>
                 <label className="control">Function:</label><br></br>
-                <input placeholder="Dock, Stow, Problem Solve,..." type="text"></input><br></br>
-                <button onClick={() => {}} className="formbtn">Submit</button>
+                <input 
+                laceholder="Dock, Stow, Problem Solve,..." 
+                type="text"
+                value={data.function || ""}
+                /><br></br>
+                <button type="submit" className="formbtn">Submit</button>
             </form>
         </div>
         </div>
