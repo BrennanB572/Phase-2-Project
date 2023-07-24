@@ -3,23 +3,18 @@ import React, { useState, useEffect } from "react";
 import { Routes, Route } from 'react-router-dom';
 import Navbar from "./Components/NavBar";
 import Home from "./Components/Home";
-import EmployeeTracker from "./Components/EmployeeTracker";
+import EmployeeTrackerForm from "./Components/EmployeeTrackerForm";
+
+const API = 
 
 const App = () => {
     const [page, setPage] = useState("/")
-    const [data, setData] = useState ([])
-
-    const getData = () => {
-        fetch('http://localhost:3000/employees')
-        .then(res => res.json())
-        .then(data => setData(data))
-    }
 
     return (
         <div className="App">
         <Navbar onChangePage={setPage} />
         <Routes>
-            <Route path="/EmployeeTracker" element={<EmployeeTracker />}>
+            <Route path="/EmployeeTracker" element={<EmployeeTrackerForm />}>
             </Route>
             <Route exact path="/" element={<Home />}>
             </Route>

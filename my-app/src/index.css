@@ -1,5 +1,5 @@
 body {
-background-color: rgb(58, 57, 68);
+background-color: rgb(86, 86, 90);
 }
 
 .nav {
@@ -27,9 +27,9 @@ background-color: rgb(58, 57, 68);
 }
 
 .form {
-  width: 300px;
+  width: 230px;
   height: 160px;
-  position: relative;
+  position: absolute;
   text-align: center;
   background-color: rgb(114, 111, 134);
 }
